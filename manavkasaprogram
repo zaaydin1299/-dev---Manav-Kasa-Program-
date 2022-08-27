@@ -1,0 +1,27 @@
+import javax.swing.*;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+       double Armut = 14.75,elma =19.90,Domates=10.45 ,Muz= 29.90,Patlican = 12.45 ,total;
+
+       Scanner manav = new Scanner(System.in);
+        System.out.print("Armut Kaç Kilo? : ");
+        Armut = manav.nextDouble();
+
+        System.out.print("Elma Kaç Kilo? : ");
+        elma = manav.nextDouble();
+
+        System.out.print("Domates Kaç Kilo? : ");
+        Domates = manav.nextDouble();
+
+        System.out.print("Muz kaç Kilo? : ");
+        Muz = manav.nextDouble();
+
+        System.out.print("Patlican Kaç kilo? : ");
+        Patlican = manav.nextDouble();
+
+        total = (Armut*14.75)+(elma*19.90)+(Domates*10.45)+(Muz*29.90)+(Patlican*12.45);
+
+        System.out.println("Toplam tutar: " + total + "$");
+
